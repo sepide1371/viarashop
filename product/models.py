@@ -43,29 +43,3 @@ class Product(models.Model):
         verbose_name = 'لیست محصولات '
 
 
-#
-# # keep brands of products
-# class BrandOfProduct(models.Model):
-#     product = models.ForeignKey(Product,on_delete=models.CASCADE, verbose_name="محصول")
-#     brand = models.ForeignKey(Brand,on_delete=models.CASCADE, verbose_name="برند")
-#
-#     def __str__(self):
-#         return "this product : {}, have this brand : {}".format(self.product, self.brand)
-#
-#     class Meta:
-#         verbose_name_plural = 'لیست برند محصولات'
-#         verbose_name = 'لیست برند محصولات'
-#
-#
-# # keep categories of products
-# class CategoryOfProduct(models.Model):
-#     product = models.ForeignKey(Product,on_delete=models.CASCADE, verbose_name="محصول")
-#     category = models.ForeignKey(Brand,on_delete=models.CASCADE, verbose_name="دسته بندی")
-#
-#     def __str__(self):
-#         return "this product : {}, have this category : {}".format(self.product, self.category)
-#
-#     class Meta:
-#         verbose_name_plural = 'لیست دسته بندی محصولات'
-#         verbose_name = 'لیست دسته بندی محصولات'
-#
